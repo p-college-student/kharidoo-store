@@ -1,0 +1,156 @@
+/* ===== RESET & BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #111;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+header {
+  background-color: #131921;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+header img {
+  height: 40px;
+}
+
+header input[type="text"] {
+  padding: 8px;
+  width: 350px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+header button {
+  padding: 8px 14px;
+  background-color: #febd69;
+  color: #111;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: #f3a847;
+}
+
+header a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* ===== BANNER SECTION ===== */
+section:nth-of-type(1) {
+  background: linear-gradient(90deg, #bdeaff, #c6f1ff);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+section:nth-of-type(1) h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+section:nth-of-type(1) p {
+  font-size: 16px;
+  color: #555;
+}
+
+section:nth-of-type(1) img {
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== CATEGORY SECTION ===== */
+section {
+    padding: 30px 40px;
+}
+
+section h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+/* ===== PRODUCT BOXES ===== */
+section > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+section > div > div {
+  background-color: white;
+  padding: 12px;
+  width: 170px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section > div > div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+section > div > div img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+section > div > div p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #222;
+}
+
+/* ===== MEDIA QUERY FOR RESPONSIVENESS ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header input[type="text"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  section > div {
+    justify-content: center;
+  }
+}
+
+/* Logo Style */
+
+.logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
