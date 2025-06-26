@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Cart - ManerMart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h2>🛒 Your Cart</h2>
+    <a href="index.html">⬅️ Back to Home</a>
+  </header>
+
+  <main>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price (₹)</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- JS will inject items here -->
+      </tbody>
+    </table>
+
+    <h3>Total: ₹<span id="cart-total">0</span></h3>
+    <button onclick="checkout()">Checkout</button>
+  </main>
+
+</body>
+</html>
