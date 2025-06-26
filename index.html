@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" href="style.css">
 
+<script defer src="script.js"></script>
+
 </head>
 <body>
 
@@ -21,7 +23,7 @@
     <div>
       <a href="#">Login</a> |
       <a href="#">Orders</a> |
-      <a href="#">Cart (0)</a>
+      <a href="#">Cart (<span class="cart-count">0</span>)</a>
     </div>
   </header>
 
@@ -39,30 +41,37 @@
       <div>
         <img src="Ace.jpeg" alt="AC" width="100">
         <p>Air conditioners</p>
+        <button onclick="addToCart('ac')">Add to Cart</button>
       </div>
       <div>
         <img src="Fridge.jpeg" alt="Fridge" width="100">
         <p>Refrigerators</p>
+        <button onclick="addToCart('fridge')">Add to Cart</button>
       </div>
       <div>
         <img src="Microwave.jpeg" alt="Microwave" width="100">
-        <p>Microwaves</p>
+        <p>Microwave</p>
+        <button onclick="addToCart('microwave')">Add to Cart</button>
       </div>
       <div>
         <img src="WashingMachine.jpeg" alt="Washing Machine" width="100">
         <p>Washing machines</p>
+        <button onclick="addToCart('washing_machine')">Add to Cart</button>
       </div>
       <div>
         <img src="Headset.jpeg" alt="Headset" width="100">
         <p>Headset</p>
+        <button onclick="addToCart('headset')">Add to Cart</button>
       </div>
       <div>
         <img src="Speaker.jpeg" alt="Speakers" width="100">
         <p>Bluetooth Speaker</p>
+        <button onclick="addToCart('speaker')">Add to Cart</button>
       </div>
       <div>
         <img src="Vaccum.jpeg" alt="Vaccum Cleaner" width="100">
         <p>Vaccum Cleaner</p>
+        <button onclick="addToCart('vaccum')">Add to Cart</button>
       </div>
     </div>
   </section>
@@ -74,30 +83,37 @@
       <div>
         <img src="CushionBedsheets.jpeg" alt="Cushion" width="100">
         <p>Cushion covers & bedsheets</p>
+         <button onclick="addToCart('cushion')">Add to Cart</button>
       </div>
       <div>
         <img src="Vases & Figurines.jpeg" alt="Decor" width="100">
         <p>Vases & Figurines</p>
+         <button onclick="addToCart('vases')">Add to Cart</button>
       </div>
       <div>
         <img src="Home Storage.jpeg" alt="Storage" width="100">
         <p>Home Storage</p>
+         <button onclick="addToCart('storage')">Add to Cart</button>
       </div>
       <div>
         <img src="Lighting Solutions.jpeg" alt="Lighting" width="100">
         <p>Lighting Solutions</p>
+         <button onclick="addToCart('lighting')">Add to Cart</button>
       </div>
       <div>
         <img src="Chair.jpeg" alt="Chair" width="100">
         <p>Home Chair</p>
+         <button onclick="addToCart('chair')">Add to Cart</button>
       </div>
       <div>
         <img src="Sofa.jpeg" alt="Sofa" width="100">
         <p>Home Sofa</p>
+         <button onclick="addToCart('sofa')">Add to Cart</button>
       </div>
       <div>
         <img src="Stool.jpeg" alt="Stool" width="100">
         <p>Wooden Stool</p>
+          <button onclick="addToCart('stool')">Add to Cart</button>
       </div>
     </div>
   </section>
@@ -109,30 +125,37 @@
       <div>
         <img src="PS5 Slim Digital.jpeg" alt="PS5" width="100">
         <p>PS5 Slim Digital</p>
+          <button onclick="addToCart('ps5_digital')">Add to Cart</button>
       </div>
       <div>
         <img src="PS5 Slim Disc.jpeg" alt="PS5 Disc" width="100">
         <p>PS5 Slim Disc</p>
+         <button onclick="addToCart('ps5_disc')">Add to Cart</button>
       </div>
       <div>
         <img src="PS5 Fortnite Edition.jpeg" alt="PS5 Fortnite" width="100">
         <p>PS5 Fortnite Edition</p>
+         <button onclick="addToCart('ps5_fortnite')">Add to Cart</button>
       </div>
       <div>
         <img src="DualSense Controller.jpeg" alt="Controller" width="100">
         <p>DualSense Controller</p>
+         <button onclick="addToCart('controller')">Add to Cart</button>
       </div>
       <div>
         <img src="Tuf-Gaming.jpeg" alt="Gaming Laptop" width="100">
         <p>Gaming Laptop</p>
+          <button onclick="addToCart('gaming_laptop')">Add to Cart</button>
       </div>
       <div>
         <img src="Monitor.jpeg" alt="Monitor" width="100">
         <p>Samsung Gaming Monitor</p>
+          <button onclick="addToCart('monitor')">Add to Cart</button>
       </div>
       <div>
         <img src="Xbox.jpeg" alt="Xbox" width="100">
         <p>X-Box Gaming</p>
+         <button onclick="addToCart('xbox')">Add to Cart</button>
       </div>
     </div>
   </section>
@@ -144,30 +167,37 @@
       <div>
         <img src="Cleaning Supplies.jpeg" alt="Cleaning" width="100">
         <p>Cleaning Supplies</p>
+         <button onclick="addToCart('cleaning')">Add to Cart</button>
       </div>
       <div>
         <img src="Bathroom Accessories.jpeg" alt="Shower" width="100">
         <p>Bathroom Accessories</p>
+         <button onclick="addToCart('bathroom')">Add to Cart</button>
       </div>
       <div>
         <img src="Home Tools.jpeg" alt="Tools" width="100">
         <p>Home Tools</p>
+         <button onclick="addToCart('tools')">Add to Cart</button>
       </div>
       <div>
         <img src="Wallpapers-Home.jpeg" alt="Wallpaper" width="100">
         <p>Wallpapers</p>
+         <button onclick="addToCart('wallpapers')">Add to Cart</button>
       </div>
       <div>
         <img src="Carpets.jpeg" alt="Carpets" width="100">
         <p>Carpets</p>
+         <button onclick="addToCart('carpets')">Add to Cart</button>
       </div>
       <div>
         <img src="Pots.jpeg" alt="Pots" width="100">
         <p>Stylish Pots</p>
+         <button onclick="addToCart('pots')">Add to Cart</button>
       </div>
       <div>
         <img src="Candle-Jar.jpg" alt="Candle-Jar" width="100">
         <p>Candel Jar</p>
+         <button onclick="addToCart('candle_jar')">Add to Cart</button>
       </div>
     </div>
   </section>
