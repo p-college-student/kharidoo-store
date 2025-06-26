@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout - ManerMart</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h2>🛍️ Checkout</h2>
+    <a href="cart.html">⬅️ Back to Cart</a>
+  </header>
+
+  <main>
+    <form id="checkout-form">
+      <label>Full Name:</label><br />
+      <input type="text" id="name" required /><br /><br />
+
+      <label>Phone Number:</label><br />
+      <input type="tel" id="phone" required /><br /><br />
+
+      <label>Shipping Address:</label><br />
+      <textarea id="address" required></textarea><br /><br />
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="success-message" style="display:none; margin-top:20px;">
+      <h3>✅ Order Placed Successfully!</h3>
+      <p>Thank you for shopping with ManerMart 🛒</p>
+      <a href="index.html">⬅️ Go Back to Home</a>
+    </div>
+  </main>
+
+</body>
+</html>

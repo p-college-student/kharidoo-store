@@ -98,12 +98,47 @@ function removeFromCart(productId) {
 }
 
 // ✅ Dummy Checkout (future)
-function checkout() {
-  alert("Checkout feature coming soon!");
-}
+//function checkout() {
+//  alert("Checkout feature coming soon!");
+//}
 
 // ✅ Run on page load
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
   renderCartPage(); // will only work if you're on cart.html
 });
+
+
+
+// ✅ Checkout Page Logic
+function setupCheckoutPage() {
+  const form = document.getElementById("checkout-form");
+  const success = document.getElementById("success-message");
+
+  if (!form || !success) return;
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const address = document.getElementById("address").value.trim();
+
+    if (name === "" || phone === "" || address === "") {
+      alert("Please fill all fields!");
+      return;
+    }
+
+    // ✅ Clear cart
+    localStorage.removeItem("cart");
+
+    // ✅ Hide form and show success
+    form.style.display = "none";
+    success.style.display = "block";
+
+    // ✅ Update cart icon
+    updateCartCount();
+  });
+}
+
+document.addEventListener("DOMContentLoaded", setupCheckoutPage);
