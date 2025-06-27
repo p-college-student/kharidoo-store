@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "price": 9999,
+    "image": "smartphone.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Headphones",
+    "price": 1999,
+    "image": "headphones.jpg"
+  }
+]
